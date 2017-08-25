@@ -1,0 +1,80 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family:Tahoma,Arial,Roboto,"Droid Sans","Helvetica Neue","Droid Sans Fallback","Heiti SC",sans-self;
+}
+li{
+    list-style:none;
+}
+html{
+    overflow:hidden;
+}
+#main{
+    width:100%;
+    height:100%;
+    position:absolute;
+    background: url("../img/beijing.jpg") no-repeat  center center;
+    background-size: 100% 100%;
+}
+.wrap{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-top: 40%;
+}
+.alter{/*圆*/
+    width: 95%;
+    display: block;
+    right: 0;
+    /*margin: 0 auto;*/
+}
+
+.box{/*中间的转盘铺满圆框*/
+    width: 75%;
+    position: absolute;
+    left: 15%;
+    top: 5%;
+
+    -webkit-transition:all 2s linear;
+    -webkit-transform-origin:50% 50%;
+}
+.middle{
+    width: 25%;
+    position: absolute;
+    left: 50%;
+    top: 38%;
+    margin-left: -10%;
+    margin-top: -10%;
+}
+.regret{/*很遗憾再来一次弹出框----再来一次绿色*/
+    width: 75%;
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    margin-left: -35%;
+    margin-top: -35%;
+    display: none;
+    z-index: 2;
+}
+.winning{/*很遗憾再来一次弹出框----再来一次灰色*/
+    width: 75%;
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    margin-left: -35%;
+    margin-top: -35%;
+    z-index: 2;
+    display: none;
+}
+.menban{/*蒙版显示隐藏*/
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(41, 43, 40, 0.8);
+    z-index: 1;
+    display: none;
+}
